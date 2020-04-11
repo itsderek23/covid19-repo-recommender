@@ -18,6 +18,14 @@ The web app has a different set of requirements than training.
 uvicorn main:app --reload
 ```
 
+## Model Inference API
+
+```
+curl --location --request POST 'http://localhost:8000/predict' \
+--header 'Content-Type: application/json' \
+--data-raw '{"columns":[0,1],"index":[0],"data":[["Python","Data"]]}'
+```
+
 ## Deploying to Heroku
 
 ```
