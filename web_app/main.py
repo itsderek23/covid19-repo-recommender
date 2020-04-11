@@ -21,4 +21,6 @@ async def _predict(payload: PredictPayload):
     output = model.predict(None,input)
     # model.predict() returning invalid json -
     # https://stackoverflow.com/questions/38821132/bokeh-valueerror-out-of-range-float-values-are-not-json-compliant
+    return output
     return json.dumps(output)
+    # TODO next - model.predict seems to work ... why is the app crashing?
