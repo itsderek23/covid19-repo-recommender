@@ -15,7 +15,7 @@ model = pickle.load(open("model.pkl","rb"))
 class PredictPayload(BaseModel):
     columns: list
     data: list
-
+    # https://fastapi.tiangolo.com/tutorial/schema-extra-example/
     class Config:
         schema_extra = {
             "example": {
