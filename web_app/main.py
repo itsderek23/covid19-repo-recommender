@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from typing import List
+from pydantic import BaseModel, Field
 import pandas as pd
 import nltk
 import pickle
@@ -14,6 +15,14 @@ model = pickle.load(open("model.pkl","rb"))
 class PredictPayload(BaseModel):
     columns: list
     data: list
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "columns": [0,1],
+                "data": [["Python","Data"]],
+            }
+        }
 
 @app.post("/predict")
 async def _predict(payload: PredictPayload):
