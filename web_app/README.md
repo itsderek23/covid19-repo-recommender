@@ -36,4 +36,4 @@ heroku buildpacks:add heroku/python
 heroku config:set PROJECT_PATH=web_app
 ```
 
-As `web_app` is contained with a mono-repo related to the Covid19-Repo-Recommender project, we need to tell Heroku to set the project path to the `/web_app` directory vs. the default (the root directory). The `subdir` buildpack and `PROJECT_PATH` env var are used for this. Setup based on [this SO response](https://stackoverflow.com/questions/39197334/automated-heroku-deploy-from-subfolder).
+As `web_app` is contained within a mono-repo related to the Covid19-Repo-Recommender project, we need to tell Heroku to set the project path to the `/web_app` directory vs. the default (the root directory). The `subdir` buildpack and `PROJECT_PATH` env var are used for this. Setup based on [this SO response](https://stackoverflow.com/questions/39197334/automated-heroku-deploy-from-subfolder).
