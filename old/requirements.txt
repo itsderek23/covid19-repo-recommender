@@ -1,0 +1,12 @@
+pandas
+langdetect
+emoji
+mlflow
+requests
+boto3
+nltk
+ipykernel
+sklearn
+voila
+cookiecutter
+invoke
