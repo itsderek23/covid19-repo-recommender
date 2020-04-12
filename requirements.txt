@@ -26,3 +26,4 @@ sklearn
 fastapi[all]
 gunicorn
 honcho
+cloudpickle
