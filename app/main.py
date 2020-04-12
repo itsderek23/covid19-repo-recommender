@@ -10,9 +10,6 @@ app = FastAPI()
 # relative to current working directory
 model = pickle.load(open("models/model.pkl","rb"))
 
-import sys
-print("path:",sys.path)
-
 # pd.DataFrame([["Python", "Data"]]).to_json(orient="split")
 # {"columns":[0,1],"index":[0],"data":[["Python","Data"]]}
 class PredictPayload(BaseModel):

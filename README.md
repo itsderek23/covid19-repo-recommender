@@ -1,10 +1,30 @@
-project_name
-==============================
+# Covid19 Repo Recommender
 
-A short description of the project.
+This is a data science project created with the [cookiecutter data science project template](https://drivendata.github.io/cookiecutter-data-science/).
 
-Project Organization
-------------
+The Jupyter Notebook files train a model that recommends GitHub Covid19-related repos based on a programming language and keywords. The [web app](/app) (start via `honcho -f Procfile.dev start`) exposes an HTTP API to run model inference.
+
+## Setup
+
+```
+python3 -m venv covid19-repo-recommender
+source covid19-repo-recommender/bin/activate
+pip install -r requirements.txt
+python -m ipykernel install --user --name=covid19-repo-recommender
+```
+
+## Running the web app
+
+```
+honcho -f Procfile.dev start
+```
+
+See the [/app](app/) folder for more details, including deploy instructions.
+
+## Cookiecutter Project Organization
+
+Below is generated from Cookiecutter.
+
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`

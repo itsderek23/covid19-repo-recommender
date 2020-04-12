@@ -25,3 +25,4 @@ ipykernel
 sklearn
 fastapi[all]
 gunicorn
+honcho
