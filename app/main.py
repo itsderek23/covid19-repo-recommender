@@ -3,7 +3,6 @@ from pydantic import BaseModel
 import pandas as pd
 import nltk
 import pickle
-import mlflow # needed as the covidrepo pkl class is a sublcass of this
 import json
 
 app = FastAPI()
