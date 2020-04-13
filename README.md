@@ -9,7 +9,7 @@ The Jupyter Notebook files train a model that recommends GitHub Covid19-related 
 ```
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 python -m ipykernel install --user --name=venv
 ```
 
