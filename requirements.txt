@@ -27,3 +27,4 @@ fastapi[all]
 gunicorn
 honcho
 cloudpickle
+dvc

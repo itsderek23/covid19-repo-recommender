@@ -2,4 +2,3 @@
 # https://stackoverflow.com/questions/17803829/how-to-customize-a-requirements-txt-for-multiple-environments#20720019
 
 -r requirements.txt
-dvc
