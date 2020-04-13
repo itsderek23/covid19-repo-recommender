@@ -1,0 +1,7 @@
+md5: e4939c70a2f989e02ce285d298c2698e
+outs:
+- md5: f66656c009cfd3f3bf6c4480eaad70dc
+  path: model.pkl
+  cache: true
+  metric: false
+  persist: false
