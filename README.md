@@ -7,10 +7,10 @@ The Jupyter Notebook files train a model that recommends GitHub Covid19-related 
 ## Setup
 
 ```
-python3 -m venv covid19-repo-recommender
-source covid19-repo-recommender/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-python -m ipykernel install --user --name=covid19-repo-recommender
+python -m ipykernel install --user --name=venv
 ```
 
 ## Running the web app

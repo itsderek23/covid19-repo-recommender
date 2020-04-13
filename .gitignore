@@ -43,7 +43,5 @@ package-lock.json
 geckodriver.log
 *.iml
 
-mlruns/
-covid19-repo-recommender/
+venv/
 notes
-web_app/covid19-rec-web
