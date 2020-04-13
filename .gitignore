@@ -45,3 +45,4 @@ geckodriver.log
 
 venv/
 notes
+/models
