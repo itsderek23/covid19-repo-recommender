@@ -9,9 +9,32 @@ The Jupyter Notebook files train a model that recommends GitHub Covid19-related 
 ```
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 python -m ipykernel install --user --name=venv
 ```
+
+## DVC
+
+[Data Version Control](https://dvc.org) is used for model versioning of the `models/model.pkl` file. A remote is pre-configured with:
+
+```
+dvc remote add -d s3remote s3://dvc-booklet/covid19-rec
+```
+
+To grab the latest:
+
+```
+dvc pull
+```
+
+After running the Notebook to train the model, commit and push the latest model version:
+
+```
+dvc add models/model.pkl
+dvc push
+```
+
+
 
 ## Running the web app
 

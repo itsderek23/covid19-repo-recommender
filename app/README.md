@@ -26,4 +26,8 @@ curl --location --request POST 'http://localhost:8000/predict' \
 heroku create
 git push heroku master
 heroku buildpacks:add heroku/python
+heroku config:set AWS_ACCESS_KEY_ID=[INSERT VALUE]
+heroku config:set AWS_SECRET_ACCESS_KEY=[INSERT VALUE]
 ```
+
+The AWS access keys are needed to get the serialized `models/model.pkl` file.
